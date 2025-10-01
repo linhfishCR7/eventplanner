@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content: https:;">
+    <title>Event Planner</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="header-content">
+                <div class="app-icon">🎉</div>
+                <div class="app-info">
+                    <h1 class="app-title">Event Planner</h1>
+                    <p class="app-subtitle">Event organization with invitations, RSVP tracking, and location sharing</p>
+                </div>
+            </div>
+        </header>
+        
+        <main class="main-content">
+            <div class="welcome-section">
+                <div class="welcome-icon">🎉</div>
+                <h2>Welcome to Event Planner</h2>
+                <p class="welcome-description">Event organization with invitations, RSVP tracking, and location sharing</p>
+                
+                <div class="features-list">
+                    <div class="feature-item">
+                            <span class="feature-icon">✨</span>
+                            <span class="feature-text">Event creation</span>
+                        </div><div class="feature-item">
+                            <span class="feature-icon">✨</span>
+                            <span class="feature-text">Invitation management</span>
+                        </div><div class="feature-item">
+                            <span class="feature-icon">✨</span>
+                            <span class="feature-text">RSVP tracking</span>
+                        </div><div class="feature-item">
+                            <span class="feature-icon">✨</span>
+                            <span class="feature-text">Location sharing</span>
+                        </div>
+                </div>
+                
+                <button class="get-started-btn" id="getStartedBtn">Get Started</button>
+            </div>
+
+            <!-- Introduction Page -->
+            <div class="introduction-page" id="introductionPage" style="display: none;">
+                <div class="content-section">
+                    <button class="back-btn" id="backToWelcomeBtn">
+                        <i class="fas fa-arrow-left"></i> Back
+                    </button>
+
+                    <h3>About Event Planner</h3>
+
+                    <div class="intro-section">
+                        <h4>📱 What is this app?</h4>
+                        <p>Event Planner is a social application designed to help you event organization with invitations, rsvp tracking, and location sharing.</p>
+                    </div>
+
+                    <div class="intro-section">
+                        <h4>🎯 Key Benefits</h4>
+                        <ul class="benefits-list">
+                            <li>Event creation</li>
+                            <li>Invitation management</li>
+                            <li>RSVP tracking</li>
+                        </ul>
+                    </div>
+
+                    <div class="intro-section">
+                        <h4>🚀 Getting Started</h4>
+                        <p>This app is built with Apache Cordova and includes 4 powerful plugins to enhance your experience. Click "Continue" to explore all features.</p>
+                    </div>
+
+                    <button class="get-started-btn" id="continueToFeaturesBtn">Continue to Features</button>
+                </div>
+            </div>
+
+            <div class="app-content" id="appContent" style="display: none;">
+                <div class="content-section">
+                    <button class="back-btn" id="backToIntroBtn">
+                        <i class="fas fa-arrow-left"></i> Back
+                    </button>
+
+                    <h3>Event Planner is Ready!</h3>
+                    <p>This is your main app page. Explore the features below:</p>
+
+                    <div class="features-grid">
+                        <div class="feature-card">
+                                <div class="feature-number">1</div>
+                                <h4>Event creation</h4>
+                                <p>Tap to explore this feature</p>
+                            </div><div class="feature-card">
+                                <div class="feature-number">2</div>
+                                <h4>Invitation management</h4>
+                                <p>Tap to explore this feature</p>
+                            </div><div class="feature-card">
+                                <div class="feature-number">3</div>
+                                <h4>RSVP tracking</h4>
+                                <p>Tap to explore this feature</p>
+                            </div><div class="feature-card">
+                                <div class="feature-number">4</div>
+                                <h4>Location sharing</h4>
+                                <p>Tap to explore this feature</p>
+                            </div>
+                    </div>
+
+                    <div class="action-buttons">
+                        <button class="btn btn-primary" id="primaryAction">
+                            <i class="fas fa-rocket"></i> Primary Action
+                        </button>
+                        <button class="btn btn-secondary" id="secondaryAction">
+                            <i class="fas fa-cog"></i> Settings
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer class="footer">
+            <p>&copy; 2024 Event Planner. Built with Apache Cordova.</p>
+        </footer>
+    </div>
+    
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
